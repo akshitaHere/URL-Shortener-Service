@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List of URLs</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='list_urls.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1 class="page-title">List of URLs</h1>
+        <table class="url-table">
+            <thead>
+                <tr>
+                    <th class="url-header">Original URL</th>
+                    <th class="url-header">Shortened URL</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for url in urls %}
+                    <tr>
+                        <td class="long-url-cell">
+                            <a class="url-link" href="{{ url.original_url }}" target="_blank">{{ url.original_url }}</a>
+                        </td>
+                        <td class="short-url-cell">
+                            <a class="url-link" href="{{ url.full_shortened_url }}" target="_blank">{{ url.full_shortened_url }}</a>
+                        </td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <a class="btn-back" href="/">Back to Home</a>
+    </div>
+</body>
+</html>
