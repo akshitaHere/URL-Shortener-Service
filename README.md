@@ -24,5 +24,5 @@ To set up the environment to run the Flask application, follow these steps:
    ``` pip install -r requirements.txt ```
 
 6. Run the Application: <br>
-   ``` python app.py <br> ```
+   ``` python app.py  ``` <br>
    Open your web browser and go to http://localhost:5000 to access the URL Shortener application.
