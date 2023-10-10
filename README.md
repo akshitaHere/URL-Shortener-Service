@@ -26,3 +26,8 @@ To set up the environment to run the Flask application, follow these steps:
 6. Run the Application: <br>
    ``` python app.py  ``` <br>
    Open your web browser and go to http://localhost:5000 to access the URL Shortener application.
+
+# URL Shortening Algorithm 
+
+First, the entered URL is checked if it is valid using regular expression validation. <br>
+The algorithm uses a combination of a secure hash function (SHA-256) and random characters to generate unique shortened URLs. This approach makes it highly unlikely for two different long URLs to produce the same short URL. SHA-256 is a secure hashing algorithm, making it challenging for attackers to reverse-engineer the original URL from the short URL. The use of random characters in the short URL further reduces the likelihood of collisions.
