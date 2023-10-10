@@ -14,6 +14,7 @@ To set up the environment to run the Flask application, follow these steps:
 3. Clone your GitHub repository to your local machine: <br>
 
     ``` git clone https://github.com/yourusername/repo-name.git ``` <br>
+    
    Navigate to the project folder: <br>
    
    ``` cd repo-name ```
@@ -32,6 +33,7 @@ To set up the environment to run the Flask application, follow these steps:
 6. Run the Application: <br>
 
    ``` python app.py  ``` <br>
+   
    Open your web browser and go to http://localhost:5000 to access the URL Shortener application.
 
 # URL Shortening Algorithm 
