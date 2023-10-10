@@ -6,7 +6,7 @@ The URL shortener service allows users to shorten long URLs into unique, shorten
 
 To set up the environment to run the Flask application, follow these steps: 
 1. Ensure you have Python installed on your machine. You can download it from the Python website (https://www.python.org/downloads/).
-2. Install Flask and the required dependencies:
+2. Install Flask and the required dependencies: <br>
     ``` pip install Flask flask_sqlalchemy ```
 3. Clone your GitHub repository to your local machine:
     git clone https://github.com/yourusername/repo-name.git
